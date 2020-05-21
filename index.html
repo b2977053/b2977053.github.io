@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home page</title>
+</head>
+<body>
+	<p id="clock"></p>
+	<script type="text/javascript">
+		var _t
+		function _fun() {
+			document.getElementById('clock').innerHTML = new Date();
+			_t = setTimeout(_fun,1000);
+		}
+		_fun(); 
+	</script>
+</body>
+</html>
